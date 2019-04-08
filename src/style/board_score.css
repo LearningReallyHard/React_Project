@@ -1,0 +1,34 @@
+.board_score{
+	flex:1 1 auto;
+}
+.board_score ul{
+	list-style:none;
+	padding:0;
+	width:200px;
+	margin:0 auto;
+}
+.board_score ul li{
+	display:flex;
+	justify-content:space-around;
+	margin:5px 0 0;
+}
+.board_score ul li p{
+	margin:0;
+}
+.board_score .pages{
+	margin-bottom:10px;
+}
+.board_score .pages span{
+	display:inline-block;
+	padding:0 4px 0;
+	transition:all .3s;
+	cursor:pointer;
+}
+.board_score .pages span:hover{
+	transform-origin:bottom center;
+	color:red;
+	transform:scaleY(1.3);
+}
+.board_score .pages span:active{
+	color:blue;
+}

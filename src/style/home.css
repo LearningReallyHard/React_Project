@@ -1,0 +1,13 @@
+.home .choose{
+	padding:0;
+}
+
+.home .choose li{
+	list-style:none;
+	padding:3px;
+}
+
+.home .choose li #link{
+	text-decoration: none !important;
+	color:black;
+}

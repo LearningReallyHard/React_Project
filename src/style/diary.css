@@ -1,0 +1,98 @@
+.Diary{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	display:flex;
+	text-align:left;
+}
+ul.diary_lists{
+	flex:0 0 300px;
+	margin:0;
+	list-style:none;
+	padding:0;
+	text-align:left;
+	background-color:#F8F8F8;
+	display:flex;
+	flex-direction:column;
+}
+ul.diary_lists > li{
+	padding:20px 0 20px 20px;
+	font-size:1.2rem;
+	font-weight:300;
+	border-bottom:1px solid #E6E6E6;
+	cursor:pointer;
+}
+ul.diary_lists ul{
+	list-style:none;
+	padding:0;
+	overflow:auto;
+}
+ul.diary_lists ul li{
+	padding:10px 20px;
+	border-bottom:1px solid #E6E6E6;
+}
+ul.diary_lists ul li .title{
+	color:#333333;
+	margin-bottom:3px;
+	display:flex;
+}
+ul.diary_lists ul li .title span:nth-child(1){
+	cursor:pointer;
+	margin-right:auto;
+}
+ul.diary_lists ul li .title span:nth-child(2){
+	cursor:pointer;
+	display:none;
+}
+ul.diary_lists ul li .content{
+	max-height:38px;
+	overflow:hidden;
+	color:#909090;
+	margin-bottom:10px;
+}
+ul.diary_lists ul li .content span{
+	cursor:pointer;
+}
+ul.diary_lists ul li .date{
+	color:#A6A6A6;
+	font-size:.7rem;
+}
+
+div.diary_main{
+	flex:1 1 auto;
+	display:flex;
+	margin:50px 40px 40px;
+	flex-direction:column;
+}
+div.diary_main form{
+	flex:1 0 auto;
+	width:100%;
+	display:flex;
+	flex-direction:column;
+}
+div.diary_main form > div{
+	margin-bottom:10px;
+	text-align:right;
+}
+div.diary_main form > div input{
+	margin-left:10px;
+}
+div.diary_main input#title, textarea#content{
+	border:none;
+	outline:0;
+}
+div.diary_main input#title{
+	width:100%;
+	font-size:3rem;
+	margin-bottom:20px;
+}
+div.diary_main textarea#content{
+	flex:1 0 auto;
+	width:100%;
+	font-size:1.5rem;
+}
+.hide{
+	display:none;
+}
